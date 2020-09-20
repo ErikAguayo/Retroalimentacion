@@ -35,13 +35,25 @@ void enteros(){
 	printf("\nEl promedio es: %f\n", prom);
 }
 
+    void cadena(int c, char regis[]){
+    	int i;
+		for(i=0; i<c; i++){
+			
+			printf("\n%s", regis);
+			
+		}
+	}
+
 int main(){
+	char regis[30];
+	int c;
 	char op;
 	
 	do{
 		
 	 printf("\n1- Capturar enteros\n");
 	 printf("\n2- Cadena\n");
+	 printf("\n\nElige una opcion: ");
 	 scanf("%c", &op);
 	
 	switch(op){
@@ -52,8 +64,14 @@ int main(){
 	
 	break;
 	
-	case 2:
+	case '2':
 		 
+	 printf("\nEscribe una cadena de caracteres: ");
+	 fflush(stdin);
+	 fgets(regis, sizeof(regis), stdin);
+	 printf("Cuantas veces quieres que se repita: ");
+	 scanf("%i", &c);
+	 cadena(c, regis);
 	
 	break;	
 	
