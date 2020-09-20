@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+#include "per.h"
 
 
 void enteros(){
@@ -51,8 +52,10 @@ int main(){
 	
 	do{
 		
-	 printf("\n1- Capturar enteros\n");
-	 printf("\n2- Cadena\n");
+	 printf("\n\n1- Capturar enteros\n");
+	 printf("\n2- Cadena de caracteres que se repiten n veces\n");
+	 printf("\n3- Capturar personajes\n");
+	 printf("\n0- Salir\n");
 	 printf("\n\nElige una opcion: ");
 	 scanf("%c", &op);
 	
@@ -74,6 +77,12 @@ int main(){
 	 cadena(c, regis);
 	
 	break;	
+	
+	case '3':
+		
+		capturar();
+		
+    break;
 	
 	}
 		
